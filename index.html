@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Distance Converter</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--/ /-------- My Styles --------/ /-->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Miles to Kilometers Converter</h1>
+
+    <div class="container top">
+      <p>
+        Type in a number of miles and click the button to convert the distance
+        to kilometers.
+      </p>
+
+      <form method="post" action="somephpfile.php" id="convert">
+        <input
+          type="text"
+          name="distance"
+          id="distance"
+          placeholder="distance"
+        />
+        <input type="submit" name="convertdist" value="Convert Distance" />
+      </form>
+    </div>
+    <div class="container bottom" id="answer">
+      <h2 class="invisible">Answer goes here</h2>
+    </div>
+
+    <p id="directions">
+      Press the "K" key to switch to kilometer converstion, press the "M" key to
+      switch to mile conversion
+    </p>
+
+    <script src="../script.js">
+      //       var convertType = "miles";
+      //       var heading = document.querySelector("h1");
+      //       var intro = document.querySelector("p");
+      //       var answerDiv = document.getElementById("answer");
+      //       var form = document.getElementById("convert");
+
+      //       document.addEventListener("keydown", function (event) {
+      //         var key = event.code;
+      //         if (key === "KeyK") {
+      //           convertType = "kilometers";
+      //           heading.innerHTML = "Kilometer to Miles converter";
+      //           intro.innerHTML =
+      //             "Type in a number of Kilometers and click the button to convert the distance to Miles ";
+      //         } else if (key === "KeyM") {
+      //           convertType = "miles";
+      //           heading.innerHTML = "Miles to Kilometers converter";
+      //           intro.innerHTML =
+      //             "Type in a number of Miles and click the button to convert the distance to Kilometers";
+      //         }
+      //       });
+
+      //       form.addEventListener("submit", function () {
+      //         event.preventDefault();
+      //         var distance = parseFloat(document.getElementById("distance").value);
+
+      //         if (distance) {
+      //           if ((convertType = "miles")) {
+      //             var converted = (distance * 1.609344).toFixed(3);
+      //             answerDiv.innerHTML = `${distance} miles is equals to ${converted} kilometres`;
+      //           } else {
+      //             var converted = (distance * 0.62137112).toFixed(3);
+      //             answerDiv.innerHTML = `${distance} kilometers is equals to ${converted} miles`;
+      //           }
+      //         } else {
+      //           answer.innerHTML = "<h2> Please provide a Number </h2>";
+      //         }
+      //       });
+    </script>
+  </body>
+</html>
